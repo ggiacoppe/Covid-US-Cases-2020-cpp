@@ -1,3 +1,4 @@
-# Covid-2020-cpp
-This is a C++ implementation of CDC DATA on CORONAVIRUS CASES in the USA in the timeline JAN 22 - APRIL 26, 2020
-Assignment based University at Albany course PHY 477/577. 
+## CDC DATA on CORONAVIRUS CASES in the USA in the timeline JAN 22 - APRIL 26, 2020
+At t = 0, as time goes towards infinity, the equations that gave me physical results for the number of active infected cases for the U.S. were both the quartic regression and the exponential growth equation. As for the sigmoid curves, I was unsuccessful obtaining a value for symmetric, but got a value for the asymmetric sigmoidal. The formulae that provided the best fit was the quartic regression.
+There is an explanation as to why the cases increased in U.S. population as it patterns the CDC’s mode.; for the future, this model has predictive power that the active infected cases in the U.S. The final # of active cases following the quartic regression 4.20515e+09 and the number of cases for the exponential was 3.92688e+10. However, asymmetric sigmoidal proved to be the largest (and most unrealistic given the population of the United States had cases of 9.60562e+11. The systematic error or the uncertainty given by the difference (using quartic regression) divided by 2 turned out to be 1.7532e+10.
+Connecting parameters has to do with the reasoning of why the quartic equation was better suited than the exponential equation as the parameters in the exponential eq could have contributed to the mean errors being too large to begin with.
