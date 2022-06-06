@@ -72,7 +72,7 @@ int main(int argc, char** argv) {
             double k = 10.9731324;
            
             double f2 = 39268.81 - (0.1189847764 / 10.9731324) * (1 - exp(10.9731324 * x));
-            /*for (double i = 1.; i < new_population; i++) {
+            for (double i = 1.; i < new_population; i++) {
                 double infected = 1.;
                 if (i < f2) {
                     double new_cases = f2 * step_size;
@@ -83,7 +83,7 @@ int main(int argc, char** argv) {
                     i++;
                     //cout << chisq1 << endl;
                 }
-            }*/
+            }
 
 
             // 2 SIGMOIDS
@@ -98,7 +98,7 @@ int main(int argc, char** argv) {
             double c = 74.43508;
             double d = 789708.7;
             
-            /*for (double i = 1.; i < new_population; i++) {
+            for (double i = 1.; i < new_population; i++) {
                 double infected = 1.; double f3 = 789708.7 + (0.9995678 - 789708.7) / (1 + pow(x / 74.43508, 16.41063));
                 if (i < f3) {
                     double new_cases = f3 * step_size;
@@ -107,9 +107,10 @@ int main(int argc, char** argv) {
                     if (chisq2 < cdc_n_value) // if smaller than current value stored in a variable 
                     chisq2+=DBL_MAX; 
                     i++;
-                   // cout << chisq2 << endl;
+                    cout << chisq2 << endl;
                 }
-            } */
+            } 
+    
             // ASYMMETRIC SIGMOID COMP. PARAM
             double chisq3 = DBL_MAX;
             double n3 = 6;
@@ -121,7 +122,8 @@ int main(int argc, char** argv) {
             double d1 = 1576628;
             double m = 0.1583732;
             double f4 = 1576628 + (1.000028 - 1576628) / (1 + (pow((x / 69.19481, 16.51944),0.1583732)));
-            /*for (double i = 1.; i < new_population; i++) {
+            
+            for (double i = 1.; i < new_population; i++) {
                 double infected = 1.; 
                 if (i < f4) {
                     double new_cases = f4 * step_size;
@@ -130,15 +132,8 @@ int main(int argc, char** argv) {
                     if (chisq3 < cdc_n_value) // update if smaller than current value stored in a variable
                     chisq3+=DBL_MAX;
                     i++;
-                    // cout << chisq3 << endl;
+                    cout << chisq3 << endl;
                 }
-            }*/
-
-
-
-
-
-
-
+            }
 
             }
